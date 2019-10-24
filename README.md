@@ -10,6 +10,7 @@ Recebemos um projeto para realizar um melhoramento sobre as dúvidas de alunos n
  o HTML5
  o CSS3
  o Servlet
+ o JavaScript
 
 
 
