@@ -1,0 +1,113 @@
+create table usuario(
+rm varchar (7),
+senha varchar (10));
+
+create table conteudo(
+titulo varchar (10),
+descricao varchar (300));
+
+create table adm(
+email varchar (15),
+senha varchar (10));
+
+drop table adm;
+drop table usuario;
+drop table conteudo;
+
+
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83153', 'gldm123');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm82983', '123gldm');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83336', '321gldm');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83223', 'gldm321');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83223', 'gldm321');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83763', 'gldm21');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm83221', 'goldim');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm86521', 'goldim123');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm76521', 'goldim321');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm54321', 'goldim543');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm43021', 'goldim021');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm31421', 'goldim3142');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm43007', 'goldim07');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm43687', 'marvel_10');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm25021', 'greg021');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm45021', 'luca021');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm12021', 'dan021');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm65432', 'segredo27');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm35371', '110128');
+
+INSERT INTO usuario(rm, senha)
+VALUES('Rm35328', 'ultima');
+
+
+
+
+
+
+
+
+INSERT INTO adm(email, senha)
+VALUES('Rm83153', 'gldm123');
+
+INSERT INTO adm(email, senha)
+VALUES('Rm82983', '123gldm');
+
+INSERT INTO adm(email, senha)
+VALUES('Rm83336', '321gldm');
+
+INSERT INTO adm(email, senha)
+VALUES('Rm83223', 'gldm321');
+
+
+
+
+
+INSERT INTO conteudo(titulo, descricao)
+VALUES('startup', 'Startup é uma empresa jovem com um modelo de negócios repetível e escalável, em um cenário de incertezas e soluções a serem desenvolvidas. Embora não se limite apenas a negócios digitais, uma startup necessita de inovação para não ser considerada uma empresa de modelo tradicional.');
+
+INSERT INTO conteudo(titulo, descricao)
+VALUES('algoritmo', 'sequência finita de regras, raciocínios ou operações que, aplicada a um número finito de dados, permite solucionar classes semelhantes de problemas.');
+
+
+
+
+SELECT * FROM adm;
+select * from usuario;
+select * from conteudo;

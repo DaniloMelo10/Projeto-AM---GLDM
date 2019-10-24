@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>GLDM - Startup</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>GLDM</h1>
+								<p>Alunos ensinando Alunos</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Conteúdo</a></li>
+								<li><a href="#work">Chat Bot</a></li>
+								<li><a href="#about">Sobre Nós</a></li>
+
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">STARTUP</h2>
+								<span class="image main"><img src="images/startup1.jpg" alt="" /></span>
+
+								<p>O que é uma startup? Startup é uma empresa jovem com um modelo de negócios repetível e escalável, em um cenário de incertezas e soluções a serem desenvolvidas. Embora não se limite apenas a negócios digitais, uma startup necessita de inovação para não ser considerada uma empresa de modelo tradicional.</p>
+								<p>De fato, startup é um termo que está na moda e empreender virou o sonho de muita gente, tanto no Brasil quanto fora dele. Um erro comum que permeia a definição de startups é se elas são somente empresas de internet. Não necessariamente, elas só são mais frequentes na Internet porque é bem mais barato e facilmente propagável criar uma empresa online do que uma de agronegócio, por exemplo.</p>
+								<p>Startups são ideias inovadoras que se tornam modelos de negócios repetíveis e escaláveis, com potencial de obter sucesso num período relativamente curto. Às vezes, temos Startups que alcançam valor de mercado na casa de bilhões de dólares, como Uber, Spotify, Airbnb, Slack, etc.</p>
+								<p>A experiência recente demonstra que regiões onde o ambiente é mais favorável, os empreendedores têm mais chances de sucesso. É o caso do “Silicon Valley”, o Vale do Silício, na Califórnia, nos EUA. Os maiores de sucesso de criação de Startups surgiram lá, e essa cultura de criação de novos negócios, a partir dessa sinergia entre empreendedorismo, tecnologia e inovação, vem se espalhando pelo mundo. E o que há de especial no Vale do Silício para que esses casos de criação de Startups surjam lá, com maior frequência do que em qualquer outra parte do mundo? Lá existe o que chamamos de “Ecossistema de criação de Startups” ou “Ecossistema Empreendedor” maduro. O Ecossistema empreendedor consiste num conjunto de “” (instituições públicas e privadas) que atuam de forma a fomentar o empreendedorismo, dando condições reais para que ele aconteça, desde a concepção das ideias, ao desenvolvimento tecnológico, planejamento de negócios, implementação das soluções na prática, até o sucesso da startup no mercado. </p>
+								<br></br>
+								<p>E no Brasil, existe “Ecossistema de Startups”?</p>
+								<p>Atualmente, o mercado empreendedor brasileiro vem crescendo em um ritmo acelerado. Segundo a GEM (2018), o país registra, aproximadamente, 49 milhões de pessoas que já possuem sua própria empresa ou estão abrindo uma.</p>
+								<p>Um dos temas mais discutidos no mercado empreendedor atual são as startups, as quais são normalmente definidas como empresas recém-criadas ou até mesmo em fase de desenvolvimento que possuem alguma ideia ou serviço inovador.</p>
+								<p>A Associação Brasileira de Startup define startup como uma empresa de base tecnológica, com um modelo de negócios repetível e escalável, que tem elementos de inovação e trabalha em condições de extrema incerteza. Normalmente, essas empresas não contam com investidores ou capital o suficiente para crescer rapidamente e ficar competitiva no mercado.</p>
+								<p>Tecnologias e o desenvolvimento de startups As tecnologias emergentes estão possibilitando inovações nos produtos, serviços, nos modelos de negócios das empresas e nas relações com os clientes.</p>
+								<p>A velocidade do desenvolvimento tecnológico aumentou consideravelmente nas últimas décadas. Atualmente, oportunidades de negócios fantásticas surgem diariamente no ambiente de negócios das startups de base tecnológica.</p>
+
+
+
+
+
+
+							</article>
+
+<!-- Chat Bot -->
+							<article id="work">
+								<section class="container">
+									<h2 class="title">Chatbot GLDM</h2>
+									<div class="chat-container"></div>
+									<input type="text" id="question" name="question" class="field"
+										placeholder="Digite sua pergunta ou mensagem para converter em áudio" />
+									<div class="controls">
+										<button id="sendQuestion">Enviar</button>
+										<button id="getVoiceButton">Ouvir</button>
+										<button id="recordButton">Gravar</button>
+										<button id="pauseButton" disabled>Pause</button>
+										<button id="stopButton" disabled>Stop</button>
+									</div>
+								</section>
+								<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+								<!-- Para a versão dois utilizar o script main.js -->
+								<script type="text/javascript" src="scripts/assistant.js"></script>
+								<script type="text/javascript" src="scripts/tts.js"></script>
+								<script type="text/javascript" src="scripts/stt.js"></script>
+							
+
+								<style>
+								body {
+	padding: 0;
+	margin: 0;
+}
+
+audio { 
+	margin: 15px auto;
+	width: 100%;
+}
+
+.container {
+	padding-top: 6%;
+	background: linear-gradient(0deg, rgba(54,54,54,1) 0%, 
+		rgba(54,54,54,0.95) 35%, rgba(54,54,54,0.85) 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.chat-container {
+	margin: 10px auto;
+	width: 500px;
+	height: 300px;
+	background: #fff;
+	color: #363636;
+	font-size: 14px;
+	font-family: verdana;
+	overflow: scroll;
+}
+
+.input-question {
+
+	width: 500px;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.field {
+	width: 500px;
+	line-height: 20px;
+	margin: 20px auto;
+	padding: 10px 5px;
+	font-size: 14px;
+	border: 0;
+	border-bottom: 2px #ddd solid;
+	color: #ddd;
+	background: transparent;
+}
+
+.field:focus {
+	outline: none;
+}
+
+button {
+	display: block;
+	background: #3395d6;
+	font-size: 10px;
+	width: 90px;
+	margin-right: 15px;
+	
+}
+
+button:hover {
+	background: #54504C;
+	border-bottom: 2px #363636 solid;
+	cursor: pointer;
+}
+
+button:disabled {
+	background: lightgray;
+	border-bottom: 2px #54504C solid;
+	pointer-events: none;
+	text-shadow: none;
+}
+
+.controls {
+	width: 500px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto 10% auto;
+}
+
+.controls > button:last-child {
+	margin-right: 0px;
+}
+
+.chat {
+	border-radius: 5px;
+	box-shadow: 0 0 6px #B2B2B2;
+	display: block;
+	padding: 10px 18px;
+	position: relative;
+	vertical-align: top;
+}
+
+.bot {
+	display: block;
+	background: #3395d6;
+	color: white;
+	float: left;
+	clear: both;
+	margin: 5px 20px 15px 45px;
+}
+
+.bot:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #3395d6;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.me {
+	display:block;
+	clear: both;
+	background: #EEE7E0;
+	color: black;
+	float: right;
+	margin: 5px 45px 15px 20px;
+}
+
+.me:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #EEE7E0;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-right: -20px;
+}
+</style>
+
+							</article>
+
+
+						<!-- Sobre Nós -->
+							<article id="about">
+								<h2 class="major">Sobre Nós</h2>
+								<span class="image main"><img src="images/ibm5.jpg" alt="" /></span>
+								<p>Somos estudantes da FIAP e estamos desenvolvendo um ChatBot via voz para ser introduzido no EAD da FIAP Com parceria com a IBM e com isso estamos em busca de um amadurecimento pessoal e profissional.
+								</p>
+								<img src="images/fiap2.jpg" alt="" />
+								<p>Recebemos um projeto para realizar um melhoramento sobre as dúvidas de alunos nas disciplinas de nivelamento da plataforma EAD da FIAP, assim vamos criar um chatbot via voz para fazer a comunicação e sanar possíveis dúvidas dos alunos, da disciplina de português sobre conceito de Startup. Nosso principal problema são as dúvidas dos alunos que acessam as plataformas de nivelamento da FIAP, e como todo aprendizado irão ter dúvidas de todo tipo referente ao assunto, uma das dificuldades é que a matéria é online, então tem que ser algo prático e imediato para que aluno tenha sua resposta na hora e não precisa ficar perdendo tempo indo atrás de um reposta a longo prazo, a nossa solução imediata seria a criação de um chatbot eficiente para tirar qualquer dúvida dos alunos, assim será mais prático o aprendizado dos alunos. Assim pensamos no professor assistente, que se chamara RIO, e terá um amplo conhecimento por se tratar de um chatbot sincronizado com a plataforma da IBM, com isso ele vai facilitar o aprendizado online por sempre estar presente sanando as dúvidas do usuário a qualquer momento e tirando a necessidade de ter um professor presente para sanar as eventuais dúvidas do processo de aprendizagens sendo assim as aulas da disciplina de nivelamento serão mais produtivas e mais utilizadas com a introdução dessa tecnologia os alunos se sentiram mais confiantes para realizar perguntas que serÃ£o feitas e respondidas via voz, como se fosse uma conversa normal em sala de aula.
+								</p>
+							</article>
+
+					
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; GLDM Company <br>Desenvolvedores: Greg  |  Lucas  |  Danilo  | Moisés</br></a>.</p>
+
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
